@@ -1,0 +1,5 @@
+/.venv
+/movies.pkl
+/similarity.pkl
+/test
+/__pycache__
