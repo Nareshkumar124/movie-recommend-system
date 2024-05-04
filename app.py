@@ -11,8 +11,10 @@ class Recommed:
         self.load()
     
     def load(self):
-        self.moviesList=pickle.load(open("movies.pkl","rb"))
-        self.similarity=pickle.load(open("similarity.pkl","rb"))
+        self.moviesList=pickle.load(f1:=open("movies.pkl","rb"))
+        self.similarity=pickle.load(f2:=open("similarity.pkl","rb"))
+        f1.close()
+        f2.close()
         
     @property
     def titiles(self):
